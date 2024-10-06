@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep Internetowy</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icons input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Banner Section */
+.banner {
+    background: url('banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 40px;
+}
+
+.banner-content p {
+    font-size: 20px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-top">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR35H9vGpmDN_iTESjvEY7iBkKE2o_Js-rypA&s" alt="Clothes store" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Nowości</a></li>
+                    <li><a href="#">Dla Niej</a></li>
+                    <li><a href="#">Dla Niego</a></li>
+                    <li><a href="#">Wyprzedaż</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <input type="text" placeholder="Szukaj...">
+                <a href="#" class="account-icon">Konto</a>
+                <a href="#" class="fav-icon">Ulubione</a>
+                <a href="#" class="cart-icon">Koszyk</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>MID SEASON SALE DO -50%</h1>
+            <p>Najlepsze okazje na sezonowe przeceny!</p>
+        </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="product-grid">
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS_aGvL1oEg4fSmHE3OO7ga6N4e6fRw49Dy6WLWW4pTm-3Qi3Xx5kZFgOciZ5rd70aFybT7IDm9nrEfJC7RQB5SnsqND_gPpL43GxZM1fwir7B-lm9P1JHj3hM&usqp=CAc" alt="Czarna Kurtka">
+            <p>Czarna kurtka z kapturem</p>
+            <p class="price">189.99 PLN</p>
+            <button>Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR2grOyGXFFaOfqHk5L0th04_b3H1zI4gER6TX2ZyA44jT_FHcu2rYj2C5-eOuNlTpljhJ1Ske3yhXISf3amajndhFMitTdgAnLrr6_eznDDKK0BeW04aZCMg&usqp=CAc" alt="Oliwkowa Kurtka">
+            <p>Oliwkowa kurtka z kołnierzem</p>
+            <p class="price">229.99 PLN</p>
+            <button>Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRBMr4mGSf02C5RcMv1y6ykuIrq3526ozPz_cE6rqb3vQL11ED07Yvlm1yPDt5iErna4TWxbOh1J_76pDyQb3AMpomDPsoXEcVHv4URy1JPo8YJo0rqO77yPw&usqp=CAc" alt="Beżowa Kurtka">
+            <p>Beżowa kurtka z kapturem</p>
+            <p class="price">189.99 PLN</p>
+            <button>Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRtYtHotCqYnwssjhQSPZPqpiVYfd5-mbwmoRQTaOYRisgjQI_P6Ncb75CEBFJtMBs1R3iKL3KnfkfZ1lIQepFYLZp_i1BbAP29M1V-bhRaKjWfPO5NkHd8UFrF9i9ms81nZ5AKng&usqp=CAc" alt="Krótka kurtka bomber">
+            <p>Krótka kurtka bomber</p>
+            <p class="price">159.99 PLN</p>
+            <button>Dodaj do koszyka</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Sklep Internetowy. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
